@@ -15,7 +15,7 @@ const Showcase = () => {
    bg-[size:14px_24px]"
     >
       <ShowcaseNavbar />
-      <section className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+      <section className="md:px-0 mx-6 w-full xl:w-4/5 2xl:w-[68%] md:mx-auto">
         <div className="flex items-center justify-center relative">
           <WordFadeIn
             className="text-3xl pt-20 lg:text-5xl font-semibold max-w-3xl mx-auto md:text-center   z-20  "

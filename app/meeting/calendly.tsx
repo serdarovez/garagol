@@ -2,15 +2,15 @@
 
 import { InlineWidget } from "react-calendly";
 
-
-const Calendly =  () => {
-
-    return ( 
+const Calendly = () => {
+  return (
     <div className="w-full ">
       <InlineWidget
-      styles={{ height: "1000px" }}
-      url="https://calendly.com/birdsoftware/meeting" />
-    </div> );
-}
- 
+        styles={{ height: "1000px" }}
+        url="https://calendly.com/ovezmyradows/garagol"
+      />
+    </div>
+  );
+};
+
 export default Calendly;

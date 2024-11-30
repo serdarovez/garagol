@@ -17,7 +17,6 @@ import { IconStarFilled } from "@tabler/icons-react";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 
-
 const services = [
   {
     icon: "/images/s_6.png",
@@ -69,18 +68,10 @@ export default function Home() {
       <Element
         name="top"
         className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
-   xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
+   w-4/5  bg-white flex items-center 
    justify-between py-6 px-4 md:px-8 mx-6"
       >
-        <Link href={"/"}>
-          <Image
-            src={"/logo/logo.webp"}
-            alt="Logo"
-            width={1000}
-            height={1000}
-            className="w-28"
-          />
-        </Link>
+        <Link className="text-2xl" href={"/"}>GARAGOL</Link>
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
@@ -115,11 +106,11 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-x-4">
-          <a href="tel:519400200" className="hidden lg:flex">
+          {/* <a href="tel:519400200" className="hidden lg:flex">
             <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
               (519)-400-200
             </button>
-          </a>
+          </a> */}
 
           <Link
             href={"/meeting"}
@@ -143,7 +134,7 @@ export default function Home() {
       </Element>
 
       <main className="md:pb-10">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
+        <div className="md:px-0 mx-6 w-4/5   md:mx-auto mt-14">
           <AnimatedShinyTextDemo />
 
           <h1>
@@ -279,14 +270,14 @@ export default function Home() {
 
       <Element name="services">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
-        <h1>
-          <WordPullUpDemo />
-        </h1>
-        <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-        All of our services are designed to help your business stand out 
-        </p>
+          <h1>
+            <WordPullUpDemo />
+          </h1>
+          <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+            All of our services are designed to help your business stand out
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
             {services.map((service) => (
               <div
                 key={service.title}
@@ -313,8 +304,8 @@ export default function Home() {
 
       <Element name="process">
         <main className="md:px-0 mx-6 md:mx-auto">
-        <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
-        Our{" "}
+          <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+            Our{" "}
             <span className="text-blue-500 flex gap-x-1 items-center">
               {" "}
               <Image
@@ -336,35 +327,36 @@ export default function Home() {
             Process
           </h1>
 
-          <p className="text-center 
+          <p
+            className="text-center 
           py-4 md:w-1/2 mx-auto 
-          text-xl md:text-2xl text-gray-500">
+          text-xl md:text-2xl text-gray-500"
+          >
             All of our services are designed to help your business to get
             noticed.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
-          <div className="w-full md:w-1/2 order-2 md:order-1">
-            <AnimatedBeamMultipleOutputDemo />
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <AnimatedBeamMultipleOutputDemo />
+            </div>
+            <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
+              <BoxRevealDemo />
+            </div>
           </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
-            <BoxRevealDemo />
-          </div>
-
-          </div>
-
         </main>
       </Element>
 
       <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
-          <Image
+          {/* <Image
             src={"/logo/logo.webp"}
             width={10000}
             height={10000}
             className=" md:w-1/3 rounded-md"
             alt="image"
-          />
+          /> */}
+          <div>LOGO</div>
           <div className="flex flex-col gap-y-5 md:w-1/2">
             <h1 className="text-lg md:text-2xl ">
               &quot;We&apos;ve been working with Bird for over 2 years and
@@ -393,28 +385,29 @@ export default function Home() {
       </Element>
 
       <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
-      <LetsMakeThingsHappenSection />
+        <LetsMakeThingsHappenSection />
       </section>
 
       <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
         <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium ">
-            <Image
+            {/* <Image
               src={"/logo/logo.webp"}
               width={10000}
               height={10000}
               className="w-40"
               alt="image"
-            />{" "}
+            />{" "} */}
+            LOGO
           </h1>
           <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
           <p className="text-left  text-xl  text-gray-500">
-            admin@birdsoftware.ca
+            email@gmail.com
           </p>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 Bird. All Rights Reserved.
+          © 2025 Garagol. All Rights Reserved.
           <Link href="/" className="text-blue-500">
             Privacy Policy
           </Link>

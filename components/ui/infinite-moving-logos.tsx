@@ -98,8 +98,8 @@ export const InfiniteMovingLogos = ({
             }}
             key={item.name}
           >
-            <div>
-              <Image
+            <div className="text-5xl" >
+              {/* <Image
                 src={item.logo}
                 alt={item.name}
                 width={10000}
@@ -108,7 +108,8 @@ export const InfiniteMovingLogos = ({
                 w-40
                 md:w-60
                  "
-              />
+              /> */}
+              {item.name}
             </div>
           </li>
         ))}
