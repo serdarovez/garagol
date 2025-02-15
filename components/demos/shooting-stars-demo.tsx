@@ -8,51 +8,51 @@ const features = [
     icon: "/icons/fast.svg",
     title: "Fast Delivery",
     description:
-      "1-2 weeks delivery for most projects. Call us for more information.",
+      "Guarantee: “We’ll deliver most small-to-mid projects within a month—or we’ll discount your next invoice.”",
   },
   {
     icon: "/icons/design.svg",
     title: "Design & Development",
     description:
-      "We design and develop your website with the latest technologies and trends.",
+      "Guarantee: “We use the latest tech and frameworks to ensure modern, secure, and efficient solutions—every time.",
   },
   {
     icon: "/icons/scalable.svg",
     title: "Scalability + Maintenance ",
-    description: "We offer maintenance and scalability for all websites.",
+    description: "Guarantee: “We build with your future in mind—free scaling consultations for the life of your project.” ",
   },
   {
     icon: "/icons/team.svg",
     title: "Team of Experts",
-    description: "A team of experts ready to help you, at all times.",
+    description: "Guarantee: “Certified pros and vetted specialists at your service—no compromises on skill or experience.”",
   },
   {
     icon: "/icons/safe.svg",
     title: "Secure Building",
     description:
-      "Safe and secure building practices. To ensure your data is safe.",
+      "Guarantee: “Every line of code undergoes security checks to protect your data and your users.”",
   },
   {
     icon: "/icons/analytics.svg",
     title: "Analytics Tracking",
-    description: "Track your progress with our built in analytics",
+    description: "Guarantee: “Real-time analytics integrated by default—so you can see measurable ROI from day one.”",
   },
 
   {
     icon: "/icons/flexible.svg",
     title: "Dynamic Websites",
-    description: "We build dynamic solutions that are easy to manage.",
+    description: "Guarantee: “Built for easy content updates and ongoing enhancements—no complex coding required from your side.”",
   },
   {
     icon: "/icons/support.svg",
     title: "24/7 Support",
     description:
-      "We offer 24/7 support for all our clients. Call us for more information.",
+      "Guarantee: “We’re on call round the clock—urgent fixes or questions get priority response within two hours.”",
   },
   {
     icon: "/icons/money.svg",
     title: "Affordable Pricing",
-    description: "Affordable pricing for all our clients.",
+    description: "Guarantee: “Competitive rates that reflect our global talent pool—no hidden fees, ever.”",
   },
 ];
 

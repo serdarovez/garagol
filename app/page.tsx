@@ -20,39 +20,39 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Web Design + Development",
+    title: "Web & Mobile Development",
     description:
-      "Take your business to the next level with our web design and development services",
+      "Build secure, user-centric websites and cross-platform mobile apps—customized to meet your brand’s unique goals.",
   },
   {
     icon: "/images/s_1.png",
-    title: "Search Engine Optimization",
+    title: "UI/UX Design & Branding",
     description:
-      "Get your website to the top of search engine results with our SEO services",
+      "Craft intuitive interfaces and cohesive brand identities that captivate users, enhance engagement, and reinforce brand loyalty.",
   },
   {
     icon: "/images/s_5.png",
-    title: "Content Creation",
+    title: "DevOps & Cloud Solutions",
     description:
-      "Boost your brand's online presence with our social media marketing services",
+      "Streamline your development pipeline with continuous integration, automated deployments, and scalable cloud infrastructure for high-performing, resilient applications.",
   },
   {
     icon: "/images/s_3.png",
-    title: "Social Media Marketing",
+    title: "Cybersecurity & Compliance",
     description:
-      "Interact with your customers and increase sales with our email marketing services",
+      "Protect your digital assets with in-depth threat analysis, penetration testing, and best-practice security frameworks to ensure bulletproof solutions.",
   },
   {
     icon: "/images/s_4.png",
-    title: "Email Marketing",
+    title: "Data Science & Analytics",
     description:
-      "With our content creation services, we help businesses drive results",
+      "Transform raw data into actionable insights using advanced analytics and machine learning, driving smarter decisions and measurable growth.",
   },
   {
     icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
+    title: "IT Consulting & Strategy",
     description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+      "Align technology with business objectives through expert guidance on modern infrastructures, emerging tech, and sustainable IT best practices.",
   },
 ];
 
@@ -71,12 +71,21 @@ export default function Home() {
    w-4/5  bg-white flex items-center 
    justify-between py-6 px-4 md:px-8 mx-6"
       >
-        <Link className="text-2xl" href={"/"}>GARAGOL</Link>
+        <Link className="text-2xl" href={"/"}>
+          {" "}
+          <Image
+            src="/logo.png"
+            alt="Garagol Logo"
+            width={1000}
+            height={1000}
+            className="w-40"
+          />
+        </Link>
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
             <Link href={"/showcase"} className="hover:text-blue-500">
-              Showcase
+              Your team
             </Link>
 
             <ScrollLink
@@ -135,7 +144,7 @@ export default function Home() {
 
       <main className="md:pb-10">
         <div className="md:px-0 mx-6 w-4/5   md:mx-auto mt-14">
-          <AnimatedShinyTextDemo />
+          {/* <AnimatedShinyTextDemo /> */}
 
           <h1>
             <CoverDemo />
@@ -173,22 +182,7 @@ export default function Home() {
        duration-200 
        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
             >
-              Book a Call
-            </Link>
-            <Link
-              href={"/showcase"}
-              className="
-              bg-white
-   py-3 
-   px-10
-   md:px-16
-      md:text-xl
-        border-4
-        border-black
-        rounded-[6px]
-        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
-            >
-              Showcase
+              Secure your project
             </Link>
           </div>
 
@@ -219,51 +213,9 @@ export default function Home() {
             </BoxReveal>
           </div>
 
-          <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
-            <div className="md:w-2/5">
-              <h1 className="text-2xl font-medium text-gray-600 w-4/5">
-                Trusted by fast moving brands worldwide
-              </h1>
-
-              <div className="flex my-6 gap-x-5 w-full">
-                <div>
-                  <h1 className="text-blue-500 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Happy Clients
-                    </p>
-                  </h1>
-                </div>
-
-                <div className="w-px bg-gray-300 self-stretch"></div>
-
-                <div className="flex-1 min-w-0">
-                  <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Projects Completed
-                    </p>
-                  </h1>
-                </div>
-              </div>
-            </div>
-
-            <section className="overflow-hidden mt-10 md:w-4/5">
-              <InfiniteMovingLogos
-                speed="slow"
-                direction="left"
-                items={[
-                  {
-                    logo: "/logo/logo.webp",
-                    name: "Logo",
-                  },
-                  {
-                    logo: "/logo/logo.webp",
-                    name: "Logo",
-                  },
-                ]}
-              />
-            </section>
+          <div className="font-semibold text-3xl text-center mt-20">
+            Your Security is Our Priority – We follow industry-leading protocols
+            to keep your data safe.
           </div>
         </div>
       </main>
@@ -398,12 +350,16 @@ export default function Home() {
               className="w-40"
               alt="image"
             />{" "} */}
-            LOGO
+            <Image
+              src="/logo.png"
+              alt="Garagol Logo"
+              width={1000}
+              height={1000}
+              className="w-40"
+            />
           </h1>
           <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
-          <p className="text-left  text-xl  text-gray-500">
-            email@gmail.com
-          </p>
+          <p className="text-left  text-xl  text-gray-500">email@gmail.com</p>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">

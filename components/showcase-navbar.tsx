@@ -31,14 +31,14 @@ xl:w-4/5
     "
     >
       <Link className="text-3xl" href="/">
-        {/* <Image
-          src="/logo/logo.webp"
-          alt="Bird Logo"
-          width={1000}
-          height={1000}
+        <Image
+          src="../logo.png"
+          alt="Garagol Logo"
+          width={undefined}
+          height={undefined}
           className="w-28"
-        /> */}
-        Logo
+        />
+        {/* Logo */}
       </Link>
 
       <div className="absolute right-1/2 translate-x-1/2 transform">
